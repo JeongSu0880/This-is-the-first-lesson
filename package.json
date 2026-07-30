@@ -20,8 +20,8 @@
     "test:backend": "cd backend && npm run test",
     "test:frontend": "cd frontend && npm run test",
     "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
-    "docker:up": "cd backend/db && docker-compose up",
-    "docker:ups": "cd backend/db && docker compose up",
+    "docker:up": "cd backend/db && docker-compose --env-file ../.env up",
+    "docker:ups": "cd backend/db && docker compose --env-file ../.env up",
     "lint:frontend": "eslint -c frontend/eslint.config.js frontend",
     "lint:backend": "eslint -c backend/eslint.config.js backend"
   },

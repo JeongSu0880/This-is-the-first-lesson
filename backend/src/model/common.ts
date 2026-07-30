@@ -4,7 +4,7 @@ import OpenAI from "openai";
 import fs from "fs";
 import axios from "axios";
 
-dotenv.config({ path: path.resolve(__dirname, "../../../.env") });
+dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
 // OpenAI 메시지 타입 정의
 export interface ChatMessage {
